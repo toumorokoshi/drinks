@@ -1,0 +1,10 @@
+/* Stylesheet for drinks.css */
+
+.answer 
+{
+    display: none;
+}
+
+ul.ingredients > li,  ul.garnishes > li{
+    text-transform:capitalize;
+}

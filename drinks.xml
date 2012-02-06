@@ -1,0 +1,143 @@
+<drinks>
+ <!-- ice="True" means "Fill with ice" -->
+ <drink name="Margarita" glass="Bucket" ice="True">
+   <garnish>Salted Rim</garnish>
+   <garnish>Lime Slices</garnish>
+   <ingredient amount="1 oz" type="alcohol">Tequila</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Triple Sec</ingredient>
+   <ingredient amount="1/4 oz" type="alcohol">Rose's Lime Juice</ingredient>
+   <ingredient amount="2 oz" type="juice">Sweet and Sour</ingredient>
+   <special>Serve as normal, or Mix with ice in a blender, and serve in a large margarita glass with a salted rim</special>
+ </drink>
+ <drink name="Long Island" glass="Tall" ice="True">
+   <garnish>Lemon Slices</garnish>
+   <ingredient amount="1/2 oz" type="alcohol">Vodka</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Rum</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Triple Sec</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Gin</ingredient>
+   <ingredient amount="2 oz" type="juice">Sweet and Sour</ingredient>
+   <ingredient amount="Fill" type="soda">Coke</ingredient>
+ </drink>
+ <drink name="Blue Lemonade / AMF" glass="Tall" ice="true">
+   <garnish>Lemon Slices</garnish>
+   <ingredient amount="1/2 oz" type="alcohol">Vodka</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Rum</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Blue Curacao</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Gin</ingredient>
+   <ingredient amount="2 oz" type="juice">Sweet and Sour</ingredient>
+   <ingredient amount="Fill" type="soda">7-Up</ingredient>
+ </drink>
+ <drink name="Black Opal" glass="Tall" ice="true">
+   <garnish>Lemon Slices</garnish>
+   <ingredient amount="1/2 oz" type="alcohol">Vodka</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Rum</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Triple Sec</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Gin</ingredient>
+   <ingredient amount="1/2 oz (top)" type="alcohol">Chambord</ingredient>
+   <ingredient amount="2 oz" type="juice">Sweet and Sour</ingredient>
+   <ingredient amount="Fill" type="soda">7-Up</ingredient>
+ </drink>
+ <drink name="Gin and Tonic" glass="Bucket" ice="true">
+   <garnish>Lime Wedge</garnish>
+   <ingredient amount="1 oz" type="alcohol">Gin</ingredient>
+   <ingredient amount="Fill" type="juice">Tonic Water</ingredient>
+ </drink>
+ <drink name="Screwdriver" glass="Tall" ice="true">
+   <ingredient amount="1 oz" type="alcohol">Vodka</ingredient>
+   <ingredient amount="Fill" type="juice">Orange Juice</ingredient>
+ </drink>
+ <drink name="Sex on the beach" glass="Tall" ice="true">
+   <garnish>Cherries</garnish>
+   <ingredient amount="1 oz" type="alcohol">Vodka</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Peach Schnapps</ingredient>
+   <ingredient amount="Fill" type="juice">Orange Juice</ingredient>
+   <ingredient amount="Fill" type="juice">Cranberry Juice</ingredient>
+ </drink>
+ <drink name="7 and 7" glass="Bucket" ice="true">
+   <ingredient amount="1 oz" type="alcohol">Seagram's Whiskey</ingredient>
+   <ingredient amount="Fill" type="soda">7-Up</ingredient>
+   <special>The Whiskey should be Seagram's 7 Whisky</special>
+ </drink>
+ <drink name="Rum and Coke" glass="Bucket" ice="true">
+   <ingredient amount="1 oz" type="alcohol">Rum</ingredient>
+   <ingredient amount="Fill" type="soda">Coke</ingredient>
+ </drink>
+ <drink name="Cuba Libre" glass="Bucket" ice="true">
+   <garnish>Lime Slices</garnish>
+   <ingredient amount="1 oz" type="alcohol">Rum</ingredient>
+   <ingredient amount="Fill" type="soda">Coke</ingredient>
+   <special>Squeeze a lime wedge into the drink</special>
+ </drink>
+ <drink name="Amaretto Sour" glass="Bucket" ice="true">
+   <garnish>Cherries</garnish>
+   <ingredient amount="1 oz" type="alcohol">Amaretto</ingredient>
+   <ingredient amount="Fill" type="juice">Sweet and Sour</ingredient>
+ </drink>
+ <drink name="Tequila Sunrise" glass="Tall" ice="true">
+   <garnish>Cherries</garnish>
+   <garnish>Orange Slices</garnish>
+   <ingredient amount="1 oz" type="alcohol">Tequila</ingredient>
+   <ingredient amount="1/2 oz (top)" type="juice">Grenadine</ingredient>
+   <ingredient amount="Fill" type="juice">Orange Juice</ingredient>
+ </drink>
+ <drink name="Appletini" glass="martini" ice="true" variation="1">
+   <garnish>Cherries</garnish>
+   <ingredient amount="1 oz" type="alcohol">Vodka</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Apple Pucker</ingredient>
+   <ingredient amount="1 oz" type="juice">Sweet and Sour</ingredient>
+   <special>Martini or Cocktail glass, chilled. Shake with ice and strain</special>
+ </drink>
+ <drink name="Mai Tai" glass="Tall" ice="true">
+   <garnish>Cherries</garnish>
+   <ingredient amount="1 oz" type="alcohol">Rum</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Creme de Noyeax</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Triple Sec</ingredient>
+   <ingredient amount="1/2 oz (top)" type="alcohol">Myer's Rum</ingredient>
+   <ingredient amount="Fill" type="juice">Sweet and Sour</ingredient>
+   <ingredient amount="Fill" type="juice">Pineapple Juice</ingredient>
+ </drink>
+ <drink name="Zombie" glass="Tall" ice="true">
+   <garnish>Cherries</garnish>
+   <ingredient amount="1 oz" type="alcohol">Rum</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Creme de Noyeax</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Triple Sec</ingredient>
+   <ingredient amount="1/2 oz (top)" type="alcohol">Bacardi 151 Rum</ingredient>
+   <ingredient amount="Fill" type="juice">Sweet and Sour</ingredient>
+   <ingredient amount="Fill" type="juice">Orange Juice</ingredient>
+ </drink>
+ <drink name="Cosmopolitan" glass="Martini" ice="true">
+   <garnish>Lemon Slices</garnish>
+   <garnish>Lemon Twist</garnish>
+   <ingredient amount="1-1/2 oz" type="alcohol">Vodka</ingredient>
+   <ingredient amount="1/2 oz" type="juice">Rose's Lime Juice</ingredient>
+   <ingredient amount="1/2 oz" type="juice">Cranberry Juice</ingredient>
+   <special>Garnish with the Lemon slice or Lemon Twist</special>
+ </drink>
+ <drink name="Smith and Wesson" glass="Tall" ice="true">
+   <ingredient amount="1-1/2 oz" type="alcohol">Vodka</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Kahlua</ingredient>
+   <ingredient amount="1 oz" type="cream">Cream</ingredient>
+   <ingredient amount="Fill" type="soda">Coke</ingredient>
+ </drink>
+ <drink name="Smith and Kerns" glass="Bucket" ice="true">
+   <garnish>Cherries</garnish>
+   <ingredient amount="1 oz" type="alcohol">Kahlua</ingredient>
+   <ingredient amount="2 oz" type="cream">Cream</ingredient>
+   <ingredient amount="Fill" type="soda">Club Soda</ingredient>
+ </drink>
+ <drink name="Alabama Slammer" glass="Tall" ice="true">
+   <garnish>Cherries</garnish>
+   <garnish>Orange Slices</garnish>
+   <ingredient amount="1 oz" type="alcohol">Sloe Gin</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Southern Comfort</ingredient>
+   <ingredient amount="1/2 oz (Top)" type="alcohol">Creme De Banane</ingredient>
+   <ingredient amount="Fill" type="juice">Orange Juice</ingredient>
+ </drink>
+ <drink name="Grape Knee High (NEHI)" glass="Tall" ice="true" variation="2">
+   <ingredient amount="1/2 oz" type="alcohol">Vodka</ingredient>
+   <ingredient amount="1 oz" type="alcohol">Chambord</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Gin</ingredient>
+   <ingredient amount="2 oz" type="alcohol">Sweet and Sour</ingredient>
+   <ingredient amount="Fill" type="soda">Club Soda</ingredient>
+ </drink>
+</drinks>

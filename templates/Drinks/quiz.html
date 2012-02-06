@@ -1,0 +1,30 @@
+{% extends "Drinks/base.html" %}
+{% block title %}Quiz - {{ drink.name }}{% endblock %}
+{% block body %}
+     {% if drink %}
+        <span class="Question">How do you make a {{ drink.name }}?<span></br>
+	<a onclick="toggleAnswers();">Show</a><a href="">Next Drink</a>
+	<div class="answer"> 
+	  <h2>{{ drink.name }}</h2>
+	  {{ drink.glass|capfirst }} glass{% if drink.ice %}, Fill with ice{% endif %}<br/>
+	  {% if ingredients %}
+	  Ingredients:
+	  <ul class="ingredients">
+	    {% for amount in ingredients %}
+	     <li>{{ amount.amount }} of {{ amount.ingredient }}</li>
+	    {% endfor %}
+	  </ul>
+	  {% endif %}
+	  {% if drink.garnishes.count != 0 %}
+	  Garnishes:
+	  <ul class="garnishes">
+	    {% for garnish in drink.garnishes.values_list %}
+	      <li>{{ garnish|last }}</li>
+	    {% endfor %}
+	  </ul>
+	  {% endif %}
+	</div>
+     {% else %}
+	An error occured!
+     {% endif %}
+{% endblock %}
