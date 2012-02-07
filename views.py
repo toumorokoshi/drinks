@@ -7,9 +7,9 @@ from Drinks.models import Drink, Amount
 # STD imports
 import time
 import random
+random.seed(time.time())
 
 def quiz(request):
-    random.seed(time.time())
     drinks = Drink.objects.all()
     drink_id = random.randint(0,drinks.count()-1)
     d = drinks[drink_id]
