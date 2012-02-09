@@ -1,5 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <drinks>
  <!-- ice="True" means "Fill with ice" -->
+ <!-- Week 1 -->
  <drink name="Margarita" glass="Bucket" ice="True">
    <garnish>Salted Rim</garnish>
    <garnish>Lime Slices</garnish>
@@ -139,5 +141,121 @@
    <ingredient amount="1/2 oz" type="alcohol">Gin</ingredient>
    <ingredient amount="2 oz" type="alcohol">Sweet and Sour</ingredient>
    <ingredient amount="Fill" type="soda">Club Soda</ingredient>
+ </drink>
+ <!-- Week 2 -->
+ <drink name="B-52" glass="shot" ice="false">
+   <ingredient amount="1/3 oz" type="alcohol">Kahlua</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Bailey's Irish Cream</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Grand Mariner</ingredient>
+   <special>Layer (from bottom to top): Kahlua, Bailey's, and the Grand Mariner</special>
+ </drink>
+ <drink name="Mud Slide" glass="shot" ice="false">
+   <ingredient amount="1/3 oz" type="alcohol">Kahlua</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Bailey's Irish Cream</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Vodka</ingredient>
+   <special>Layer (from bottom to top): Kahlua, Bailey's, and the Vodka</special>
+ </drink>
+ <drink name="Harley Davidson" glass="shot" ice="false">
+   <ingredient amount="1/2 oz" type="alcohol">Jack Daniel's Whiskey</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Yukon Jack Whiskey</ingredient>
+ </drink>
+ <drink name="Liquid Cocaine" glass="shot" ice="false">
+   <ingredient amount="1/3 oz" type="alcohol">Jagermeister</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Rumplemintz</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Bacardi 151 Rum</ingredient>
+   <special>Layer (from bottom to top): Jagermeister, Rumplemintz, and the Bacardi 151</special>
+ </drink>
+ <drink name="911" glass="shot" ice="false">
+   <ingredient amount="1/3 oz" type="alcohol">Jagermeister</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Goldschlager</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Rumplemintz</ingredient>
+   <special>Layer (from bottom to top): Jagermeister, Goldschlager, and the Rumplemintz.</special>
+ </drink>
+ <drink name="Duckfart" glass="shot" ice="false">
+   <ingredient amount="1/3 oz" type="alcohol">Kahlua</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Bailey's Irish Cream</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Frangelico</ingredient> <special>Layer (from bottom to top): Kahlua, Bailey's Irish Cream, and the Frangelico. Top with whipped cream.</special> </drink>
+ <drink name="Silk Panties" glass="shot" ice="false">
+   <ingredient amount="1/2 oz" type="alcohol">Peach Schnapps</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Vodka</ingredient>
+ </drink>
+ <drink name="Prison Sex" glass="shot" ice="false">
+   <ingredient amount="3/4 oz" type="alcohol">Butterscotch Schnapps</ingredient>
+   <ingredient amount="1/4 oz" type="alcohol">Crown Royal Whiskey</ingredient>
+   <special>Layer (from bottom to top): Butterscotch Schnapps, and the Crown Royal Whiskey.</special>
+ </drink>
+ <drink name="Screaming Orgasm" glass="shot" ice="false">
+   <ingredient amount="1/4 oz" type="alcohol">Kahlua</ingredient>
+   <ingredient amount="1/4 oz" type="alcohol">Bailey's Irish Cream</ingredient>
+   <ingredient amount="1/4 oz" type="alcohol">Amaretto</ingredient>
+   <ingredient amount="1/4 oz" type="alcohol">Vodka</ingredient>
+   <special>Layer (from bottom to top): Kahlua, Bailey's Irish Cream, Amaretto, Vodka.</special>
+ </drink>
+ <drink name="Cowboy Cocksucker" glass="shot" ice="false">
+   <ingredient amount="1/3 oz" type="alcohol">Bailey's Irish Cream</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Vodka</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Butterscotch Schnapps</ingredient>
+   <special>Layer (from bottom to top): Bailey's Irish Cream, Vodka, Butterscotch Schnapps. Top with 4-6" of whipped cream.</special>
+ </drink>
+ <drink name="Muff Diver" glass="shot" ice="false">
+   <ingredient amount="1/3 oz" type="alcohol">Bailey's Irish cream</ingredient> <ingredient amount="1/3 oz" type="alcohol">Amaretto</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Butterscotch Schnapps</ingredient>
+   <special>Layer (from bottom to top): Bailey's Irish Cream, Amaretto, Butterscotch Schnapps. Top with 4-6" of whipped cream.</special>
+ </drink>
+ <drink name="Chocolate Cake" glass="shot" ice="false">
+   <ingredient amount="2/3 oz" type="alcohol">Absolut Citron Vodka</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Frangelico</ingredient>
+   <special>Sugared rum. Serve with several sugared lemon slices.</special>
+ </drink>
+ <drink name="Oatmeal Cookie" glass="shot" ice="false">
+   <ingredient amount="1/4 oz" type="alcohol">Kahlua</ingredient>
+   <ingredient amount="1/4 oz" type="alcohol">Bailey's Irish Cream</ingredient>
+   <ingredient amount="1/4 oz" type="alcohol">Butterscotch Schnapps</ingredient>
+   <ingredient amount="1/4 oz" type="alcohol">Goldschlager</ingredient>
+   <special>Layer (from bottom to top): Kahlua, Bailey's Irish Cream, Butterscotch Schnapps, Goldschlager.</special>
+ </drink>
+ <drink name="German Chocolate Cake" glass="shot" ice="false">
+   <ingredient amount="1/3 oz" type="alcohol">Kahlua</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Bailey's Irish Cream</ingredient>
+   <ingredient amount="1/3 oz" type="alcohol">Frangelico</ingredient>
+   <special>Layer (from bottom to top): Kahlua, Bailey's Irish Cream, Frangelico. Top with whipped cream.</special>
+ </drink>
+ <drink name="Lemon Drop" glass="rocks" ice="True">
+   <ingredient amount="1 oz" type="alcohol">Vodka</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Triple Sec</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Lemon Juice</ingredient>
+   <ingredient amount="Fill" type="alcohol">Sweet and Sour</ingredient>
+   <garnish>Lemon Slices covered in Sugar</garnish>
+   <garnish>Sugared rim</garnish>
+ </drink>
+ <!-- Can't find this drink
+ <drink name="Dirty Girl Scout">
+ </drink> -->
+ <drink name="Kamikaze" glass="shot" ice="false">
+   <ingredient amount="1 oz" type="alcohol">Vodka</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Triple Sec</ingredient>
+   <ingredient amount="1/4 oz" type="alcohol">Rose's Lime Juice</ingredient>
+   <garnish>Lime Wedge</garnish>
+ </drink>
+ <drink name="Rum Runner (Straight)" glass="tall" ice="True">
+   <ingredient amount="1/2 oz" type="alcohol">Light Rum</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Gold Rum</ingredient>
+   <ingredient amount="1-1/2 oz" type="alcohol">Sweet and Sour</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Blackberry Brandy</ingredient>
+   <ingredient amount="1/2 oz" type="alcohol">Creme de Banana</ingredient>
+   <ingredient amount="Fill" type="juice">Orange Juice</ingredient>
+   <ingredient amount="1/2 oz (Top)" type="juice">Grenadine</ingredient>
+   <garnish>Cherries</garnish>
+   <garnish>Orange Slices</garnish>
+ </drink>
+ <drink name="Hurricane" glass="tall" ice="true">
+   <garnish>Cherries</garnish>
+   <garnish>Orange Slices</garnish>
+   <ingredient amount="1 oz" type="alcohol">Myer's Rum</ingredient>
+   <ingredient amount="1 oz" type="alcohol">Bacardi Light Rum</ingredient>
+   <ingredient amount="1/4 oz" type="alcohol">Rose's Lime Juice</ingredient>
+   <ingredient amount="Fill" type="juice">Sweet and Sour</ingredient>
+   <ingredient amount="Fill" type="juice">Orange Juice</ingredient>
+   <ingredient amount="1/2 oz (Top)" type="juice">Grenadine</ingredient>
  </drink>
 </drinks>
