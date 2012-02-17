@@ -1,0 +1,6 @@
+{% extends "Drinks/base.html" %}
+{% load print_drink %}
+{% block title %}{{ drink.name }}{% endblock %}
+{% block body %}
+  {% print_drink drink %}
+{% endblock %}

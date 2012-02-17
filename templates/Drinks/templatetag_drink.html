@@ -1,0 +1,23 @@
+<div class="drink"> 
+  <h2><a href="/drinks/drink/{{ drink.slug}}">{{ drink.name }}</a></h2>
+  {{ drink.glass|capfirst }} glass{% if drink.ice %}, Fill with ice{% endif %}<br/>
+  {% if ingredients %}
+  Ingredients:
+  <ul class="ingredients">
+    {% for amount in ingredients %}
+     <li>{{ amount.amount }} of {{ amount.ingredient }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if drink.garnishes.count != 0 %}
+  Garnishes:
+  <ul class="garnishes">
+    {% for garnish in drink.garnishes.values_list %}
+      <li>{{ garnish|last }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if drink.special %}
+  {{ drink.special }}
+  {% endif %}
+</div>

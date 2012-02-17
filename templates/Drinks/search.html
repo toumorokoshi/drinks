@@ -1,0 +1,24 @@
+{% extends "Drinks/base.html" %}
+{% load print_drink %}
+{% block title %}Drink Search{% endblock %}
+{% block body %}
+  {% if d_list %}
+    Drinks with a name like {{ query }}
+    {% for drink in d_list %}
+      {% print_drink drink %}
+    {% endfor %}
+  {% endif %}
+  {% if i_list %}
+    Drinks with the ingredient  {{ query }}
+    {% for drink in i_list %}
+      {% print_drink drink %}
+    {% endfor %}
+  {% endif %}
+  {% if g_list %}
+    Drinks with the garnish  {{ query }}
+    {% for drink in g_list %}
+      {% print_drink drink %}
+    {% endfor %}
+  {% endif %}
+{% endblock %}
+
