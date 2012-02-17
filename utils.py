@@ -3,6 +3,8 @@
 '''
 import xml.etree.ElementTree as xml
 from Drinks.models import Glass, Garnish, IngredientType, Ingredient, Drink, Amount
+import re
+import unittest
 
 def convertXMLToDrinks(filepath):
     """ Converts the xml file specified in filepath
@@ -14,6 +16,7 @@ def convertXMLToDrinks(filepath):
     for drink_x in drink_xlist:
         d = Drink()
         d.name = drink_x.get('name')
+        d.slug = toSlug(d.name)
         # parse for new glass type
         try: 
             g = Glass.objects.get(name=drink_x.get('glass').lower())
@@ -37,6 +40,7 @@ def convertXMLToDrinks(filepath):
                 ga.save()
             d.garnishes.add(ga)
         # parse for ingredients (drink must be saved at this point to continue)
+        d.special = ("" if not drink_x.get('special') else drink_x.get('special'))
         d.save()
         ingredient_xlist = drink_x.findall("ingredient")
         for ingredient_x in ingredient_xlist:
@@ -60,3 +64,31 @@ def convertXMLToDrinks(filepath):
             a.save()
     return
     
+
+def searchParse(q_string):
+    """ Parsing the query string passed through search
+        rules:
+        colons are used to classify query type
+    """
+    # example string
+    # drink:margarita alcohol:tequila garnish:cherries
+    # margarita,alcohol:tequila
+    d_list = Drink.objects.filter(name__icontains=q_string)
+    garnishes = Garnish.objects.filter(name__icontains=q_string)
+    g_list = []
+    for g in garnishes:
+        g_list.extend(Drink.objects.filter(garnishes=g))
+    i_list = []
+    #ingredients = Ingredient.objects.filter(name__icontains=q_string)
+    return (d_list,g_list,i_list)
+
+def toSlug(s):
+    """ Converts a string s to a slugworthy name:
+        no spaces 
+        anything between parentheses is removed
+        all lowercase
+    """
+    s = s.lower() # lowercase
+    s = s.replace(' ','') # remove spaces
+    s = re.sub('\(.*\)','',s)
+    return s

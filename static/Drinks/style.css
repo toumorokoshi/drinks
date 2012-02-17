@@ -5,6 +5,55 @@
     display: none;
 }
 
+.title 
+{
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+h2 > a {
+    text-decoration:none;
+}
+
+.drink 
+{
+    background-color:#FFF;
+    padding:10px;
+}
+
 ul.ingredients > li,  ul.garnishes > li{
     text-transform:capitalize;
+}
+
+body 
+{
+    margin:0 auto;
+    width:80%;
+}
+
+header {
+    padding:10px 5px;
+    background-color:#7AC5CD;
+    min-height:40px;
+}
+
+#search {
+    float:right;
+}
+
+#main {
+    padding:10px;
+}
+
+#body {
+    background-color:#FFF8DC;
+    margin:0;
+    padding:0;
+}
+
+footer {
+    background-color:#8B8878;
+    padding:5px 10px; 
+    color:#FFF;
 }

@@ -6,6 +6,8 @@ Replace this with more appropriate tests for your application.
 """
 
 from django.test import TestCase
+import Drinks.utils as utils
+import unittest
 
 
 class SimpleTest(TestCase):
@@ -14,3 +16,14 @@ class SimpleTest(TestCase):
         Tests that 1 + 1 always equals 2.
         """
         self.assertEqual(1 + 1, 2)
+
+
+class TestUtils(unittest.TestCase):
+    
+    def setUp(self):
+        pass
+
+    def test_toSlug(self):
+        cases = {'Vodka Cran (NEHI)':'vodkacran'}
+        for case in cases.keys():
+            self.assertEqual(utils.toSlug(case),cases[case])

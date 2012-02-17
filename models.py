@@ -23,11 +23,16 @@ class IngredientType(models.Model):
 class Ingredient(models.Model):
     name = models.CharField(max_length=255)
     ingredient_type = models.ForeignKey(IngredientType)
+
     def __unicode__(self):
         return self.name
+    
+    def url(self):
+        return "drink/" + self.name
 
 class Drink(models.Model):
     name = models.CharField(max_length=255)
+    slug = models.CharField(max_length=255)
     glass = models.ForeignKey(Glass)
     ice = models.BooleanField(default=False)
     garnishes = models.ManyToManyField(Garnish)
