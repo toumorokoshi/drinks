@@ -6,6 +6,7 @@ from Drinks.models import Glass, Garnish, IngredientType, Ingredient, Drink, Amo
 import re
 import unittest
 
+
 def convertXMLToDrinks(filepath):
     """ Converts the xml file specified in filepath
         to the drinks model
@@ -18,7 +19,7 @@ def convertXMLToDrinks(filepath):
         d.name = drink_x.get('name')
         d.slug = toSlug(d.name)
         # parse for new glass type
-        try: 
+        try:
             g = Glass.objects.get(name=drink_x.get('glass').lower())
         except Glass.DoesNotExist:
             g = Glass()
@@ -49,13 +50,13 @@ def convertXMLToDrinks(filepath):
             except:
                 i = Ingredient()
                 i.name = ingredient_x.text.lower()
-                try: 
+                try:
                     it = IngredientType.objects.get(name=ingredient_x.get('type').lower())
                 except:
                     it = IngredientType()
                     it.name = ingredient_x.get('type').lower()
                     it.save()
-                i.ingredient_type = it;
+                i.ingredient_type = it
                 i.save()
             a = Amount()
             a.drink = d
@@ -63,7 +64,7 @@ def convertXMLToDrinks(filepath):
             a.amount = ingredient_x.get('amount')
             a.save()
     return
-    
+
 
 def searchParse(q_string):
     """ Parsing the query string passed through search
@@ -75,20 +76,23 @@ def searchParse(q_string):
     # margarita,alcohol:tequila
     d_list = Drink.objects.filter(name__icontains=q_string)
     garnishes = Garnish.objects.filter(name__icontains=q_string)
+    ingredients = Ingredient.objects.filter(name__icontains=q_string)
     g_list = []
     for g in garnishes:
         g_list.extend(Drink.objects.filter(garnishes=g))
     i_list = []
-    #ingredients = Ingredient.objects.filter(name__icontains=q_string)
-    return (d_list,g_list,i_list)
+    for i in ingredients:
+        i_list.extend(Drink.objects.filter(ingredients=i))
+    return (d_list, g_list, i_list)
+
 
 def toSlug(s):
     """ Converts a string s to a slugworthy name:
-        no spaces 
+        no spaces
         anything between parentheses is removed
         all lowercase
     """
-    s = s.lower() # lowercase
-    s = s.replace(' ','') # remove spaces
-    s = re.sub('\(.*\)','',s)
+    s = s.lower()  # lowercase
+    s = s.replace(' ', '')  # remove spaces
+    s = re.sub('\(.*\)', '', s)
     return s
